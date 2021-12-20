@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final </title>
+    <style>
+        body{
+            background-color:blue;
+        }
+        #portaFoto {
+           
+            background-color:blue;
+            display: block;
+           
+        }
+    
+        #laFoto {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 1000px;
+        }
+    
+        /*  Con esto conseguimos que el portarretratos no sea mayor que la foto más grande
+            para evitar que se pixele */
+    
+        @media screen and (orientation:landscape) {
+            #portaFoto {
+                max-width: 1200px;
+                max-height: 800px;
+            }
+        }
+    
+        @media screen and (orientation:portrait) {
+            #portaFoto {
+                max-width: 600px;
+                max-height: 900px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="foto">
+    <picture id="portaFoto">
+       
+    
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./3.horizontal1920/horizontal1920.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./3.horizontal1920/horizontal1920.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./3.horizontal1920/horizontal1920.jpg" type="image/jpg">
+
+        <source media="(orientation: portrait) and (min-width: 801px)" srcset="./1.vertical1200/vertical1200.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width: 801px)" srcset="./1.vertical1200/vertical1200.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width: 801px)" srcset="./1.vertical1200/vertical1200.jpg" type="image/jpg">
+
+
+        <source media="(orientation: landscape) and (min-width: 601px)" srcset="./4.horizontal800/horizontal800.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 601px)" srcset="./4.horizontal800/horizontal800.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 601px)" srcset="./4.horizontal800/horizontal800.jpg" type="image/jpg">
+
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./2.vertical600/vertical600.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./2.vertical600/vertical600.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width:401px)" srcset="./2.vertical600/vertical600.jpg" type="image/jpg">
+    
+        <img id="laFoto" alt="TorreEiffel" title="TorreEiffel" src="Fondo.jpg" />
+    </picture>
+</body>
+
+
+
+
+</html>
