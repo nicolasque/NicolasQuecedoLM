@@ -8,8 +8,13 @@
     <title>Proyecto final </title>
     <style>
         body{
-            background-color:blue;
-        }
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            display:flex;
+            height: 100vh;
+            width: 100vw;        }
         #portaFoto {
            
             background-color:blue;
@@ -20,7 +25,7 @@
         #laFoto {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            object-fit: cover;
         }
         div{
             display: flex;
@@ -53,24 +58,24 @@
     <picture id="portaFoto">
        
     
-        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./3.horizontal1920/horizontal1920.heic" type="image/heic">
-        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./3.horizontal1920/horizontal1920.webp" type="image/webp">
-        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./3.horizontal1920/horizontal1920.jpg" type="image/jpg">
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./img\ProllectoFinal\lighthouse-2707528_1920.heic" > 
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./img\ProllectoFinal\lighthouse-2707528_1920.webp" >
+        <source media="(orientation: landscape) and (min-width:1201px)" srcset="./img\ProllectoFinal\lighthouse-2707528_1920.jpg" >
 
         <source media="(orientation: portrait) and (min-width: 801px)" srcset="./1.vertical1200/vertical1200.heic" type="image/heic">
         <source media="(orientation: portrait) and (min-width: 801px)" srcset="./1.vertical1200/vertical1200.webp" type="image/webp">
         <source media="(orientation: portrait) and (min-width: 801px)" srcset="./1.vertical1200/vertical1200.jpg" type="image/jpg">
 
 
-        <source media="(orientation: landscape) and (min-width: 601px)" srcset="./4.horizontal800/horizontal800.heic" type="image/heic">
-        <source media="(orientation: landscape) and (min-width: 601px)" srcset="./4.horizontal800/horizontal800.webp" type="image/webp">
-        <source media="(orientation: landscape) and (min-width: 601px)" srcset="./4.horizontal800/horizontal800.jpg" type="image/jpg">
+        <source media="(orientation: landscape) and (min-width: 601px)" srcset="ProllectoFinal\boat-.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 601px)" srcset="ProllectoFinal\boat-.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 601px)" srcset="ProllectoFinal\boat-.jpg" type="image/jpg">
 
         <source media="(orientation: portrait) and (min-width:401px)" srcset="./2.vertical600/vertical600.heic" type="image/heic">
         <source media="(orientation: portrait) and (min-width:401px)" srcset="./2.vertical600/vertical600.webp" type="image/webp">
         <source media="(orientation: portrait) and (min-width:401px)" srcset="./2.vertical600/vertical600.jpg" type="image/jpg">
     
-        <img id="laFoto" alt="TorreEiffel" title="TorreEiffel" src="Fondo.jpg" />
+        <img id="laFoto" alt="Fondo" title="Fondo" src="Fondo.jpg" />
     </picture>
 </body>
 
